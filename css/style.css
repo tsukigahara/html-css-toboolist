@@ -1,34 +1,39 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* per togliere lo spazio tra header e margine della finestra web */
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: rgb(240, 240, 240);
     width: 100%;
     height: auto;
+
 }
 
 header {
+    display: block;
     background-color: white;
     width: 100%;
     height: 80px;
-    padding-left: 30px;
+    padding-left: 40px;
+    /* temporaneo per centrare logo */
+    line-height: 80px; 
 }
 
 #logotext {
     display: inline-block;
     font-weight: bold;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
     vertical-align: middle;
-
 }
 
 #logo {
-    display: inline-block;
-    width: 70px;
-    height: auto;
-    
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
 }
 
 .conteiner {
@@ -39,7 +44,6 @@ header {
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
-    padding: 10px 0;
 
 
 }
@@ -114,11 +118,15 @@ header {
 }
 
 #list {
-    padding: 0 60px;
+    padding: 40px 60px;
 }
 
 .contents {
     margin: 15px 0;
+}
+
+.group {
+    margin-bottom: 40px;
 }
 
 .tags {
